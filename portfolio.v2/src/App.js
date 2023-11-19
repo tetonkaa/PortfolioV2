@@ -9,7 +9,7 @@ import Contact from './pages/contact/contact';
 function App() {
   return (
     <>
-      <Sidebar/>
+      {/* <Sidebar/> */}
     <Router>
     <Routes>
       <Route path="/" element={<Main/>}/>
