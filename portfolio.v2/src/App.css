@@ -13,6 +13,12 @@
   }
 }
 
+@font-face {
+  font-family: headingProItalic;
+  src: url('../public/fonts/heading-pro-italic.woff'),
+      url('../public/fonts/heading-pro-italic.woff2');
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

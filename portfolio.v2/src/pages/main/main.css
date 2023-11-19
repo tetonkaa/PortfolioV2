@@ -15,27 +15,31 @@
 
 .introText {
   width: 47%;
-  border: dotted red;
+  /* border: dotted red; */
   display: flex;
   flex-direction: column;
 }
 
-.introText h1{
-    font-size: 3em;
-    padding-top: 10vh;
-    text-align: center;
+.introText h1 {
+  font-size: 3em;
+  padding-top: 10vh;
+  text-align: center;
+  font-family: "headingProItalic";
+  color: rgb(65, 65, 65);
 }
 
-.introText h3{
-    text-align: center;
-    font-size: 2em;
-    padding-top: 20vh;
+.introText h3 {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 25vh;
+  font-family: "headingProItalic";
+  color: rgb(65, 65, 65);
 }
 
-.introText h3:nth-of-type(2){
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 45vh;
+.introText h3:nth-of-type(2) {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 45vh;
 }
 
 navContainer {
@@ -44,16 +48,16 @@ navContainer {
 }
 
 .me {
-  border: dotted #000000;
+  /* border: dotted #000000; */
   height: 35vh;
 }
 
 .about {
-  border: solid rgb(58, 8, 224);
+  /* border: solid rgb(58, 8, 224); */
   height: 20vh;
 }
 
 .projects {
-  border: dotted rgb(222, 250, 13);
+  /* border: dotted rgb(222, 250, 13); */
   height: 30vh;
 }
