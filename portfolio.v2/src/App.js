@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Sidebar from './components/sidebar/sidebar';
+import Nav from './components/nav/nav';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './pages/main/main';
 import Projects from './pages/projects/projects';
@@ -9,7 +9,7 @@ import Contact from './pages/contact/contact';
 function App() {
   return (
     <>
-      {/* <Sidebar/> */}
+    <Nav />
     <Router>
     <Routes>
       <Route path="/" element={<Main/>}/>

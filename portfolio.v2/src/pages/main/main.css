@@ -48,16 +48,16 @@ navContainer {
 }
 
 .me {
-  /* border: dotted #000000; */
+  border: dotted #000000;
   height: 35vh;
 }
 
 .about {
-  /* border: solid rgb(58, 8, 224); */
+  border: solid rgb(58, 8, 224);
   height: 20vh;
 }
 
 .projects {
-  /* border: dotted rgb(222, 250, 13); */
+  border: dotted rgb(222, 250, 13);
   height: 30vh;
 }
