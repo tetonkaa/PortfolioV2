@@ -1,15 +1,22 @@
 nav{
     position: absolute;
     width: 100%;
+    z-index: 10;
 }
 
 svg{
     height: 4vh;
-    fill: #f3e7d4;
-    stroke: #e2745e
+    fill: #414141;
+    transition: .2s ease-in-out
 }
 
-svg:hover{
-    fill: #414141 !important;
+
+svg.ionicon:hover path {
+    fill: #e2745e;
     transition: .2s ease-in-out
+}
+
+
+a:hover{
+    cursor: pointer
 }

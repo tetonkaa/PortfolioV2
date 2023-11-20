@@ -1,5 +1,5 @@
 import "./main.css";
-import face from "../../photos/meHead.png";
+import face from "../../images/meHead.png";
 
 export default function Main() {
   return (
