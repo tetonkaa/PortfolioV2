@@ -1,8 +1,12 @@
 .projects {
-  background-color: aqua;
+  background-color: #b2b2da;
+    opacity: 0.8;
+    background-image: linear-gradient( #9b9bd1 50%, #444cf7 50%);
+    background-size: 10px 10px;
   height: 100vh;
   position: relative;
   padding-top: 12vh;
+  animation: screenStatic 20s ease-in-out infinite;
 }
 
 .projectsContainer{
@@ -38,6 +42,20 @@
     }
     100%{border: 16px dashed #00000094;
 
+    }
+  }
+
+
+  @keyframes screenStatic2{
+    0%{
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a2a2ff 4px ), repeating-linear-gradient( #444cf755, #444cf7 );
+    }
+  
+    100%{
+      background-color: #a2a2ff;
+      opacity: 0.8;
+      background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #444cf7, #444cf7 50%, #a2a2ff 50%);
+      background-size: 4px 4px;
     }
   }
 

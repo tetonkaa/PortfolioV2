@@ -51,10 +51,9 @@
   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
 .content2 button:hover {
-  font-size: 2.5em;
   cursor: pointer;
   color: #e2745e;
-  transition: 0.5s steps(4);
+  transition: 0.3s steps(4);
 }
 
 .aboutContainer::before {
@@ -89,9 +88,9 @@
   }
 
   100%{
-    background-color: #acacc7;
+    background-color: #9c9ccd;
 opacity: 0.8;
-background-image:  linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #9c9ccd 25%);
+background-image:  linear-gradient(135deg, #777efb 15%, transparent 15%), linear-gradient(225deg, #777efb 15%, transparent 15%), linear-gradient(45deg, #777efb 25%, transparent 25%), linear-gradient(315deg, #777efb 25%, #9c9ccd 25%);
 background-position:  6px 0, 6px 0, 0 0, 0 0;
 background-size: 6px 6px;
 background-repeat: repeat;
