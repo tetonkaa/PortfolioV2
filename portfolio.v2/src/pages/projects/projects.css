@@ -1,61 +1,115 @@
 .projects {
   background-color: #b2b2da;
-    opacity: 0.8;
-    background-image: linear-gradient( #9b9bd1 50%, #444cf7 50%);
-    background-size: 10px 10px;
+  opacity: 0.8;
+  background-image: linear-gradient(#9b9bd1 50%, #444cf7 50%);
+  background-size: 10px 10px;
   height: 100vh;
   position: relative;
   padding-top: 12vh;
   animation: screenStatic 20s ease-in-out infinite;
 }
 
-.projectsContainer{
-    border: 16px dashed #00000094;
-    height: 80vh;
-    width: 60vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    margin-left: 17vw;
-    transition: .5s ease-in-out;
-    animation: dottedEntry 1s ease-in;
-
+.projectsContainer {
+  border: 16px dashed #00000094;
+  height: 80vh;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 17vw;
+  transition: 0.5s ease-in-out;
+  animation: dottedEntry 1s ease-in;
 }
 
 .projectsContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1; /* Set a z-index to place it on top of the content */
-    background-image: url(../../images/bgBorder.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Set a z-index to place it on top of the content */
+  background-image: url(../../images/bgBorder.png);
   height: 100vh;
   background-position: 20% 50%;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.projectButtons {
+  z-index: 1;
+  position: absolute;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  margin-top: 65vh;
+}
+
+.projectButtons button {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+}
+
+.currentProject {
+  background-color: #a2a2ff3e;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 4vh;
+}
+
+.currentProject h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+
+.currentProject img {
+  height: 35vh;
+  margin: auto;
+}
+
+.currentProject p {
+  font-size: 1em;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  width: 33vw;
+}
+
+@keyframes dottedEntry {
+  0% {
+    border: 1px dashed #00000094;
+  }
+  100% {
+    border: 16px dashed #00000094;
+  }
+}
+
+@keyframes screenStatic2 {
+  0% {
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #a2a2ff 4px
+      ),
+      repeating-linear-gradient(#444cf755, #444cf7);
   }
 
-  @keyframes dottedEntry{
-    0%{border: 1px dashed #00000094;
-    }
-    100%{border: 16px dashed #00000094;
-
-    }
+  100% {
+    background-color: #a2a2ff;
+    opacity: 0.8;
+    background-image: radial-gradient(
+      ellipse farthest-corner at 4px 4px,
+      #444cf7,
+      #444cf7 50%,
+      #a2a2ff 50%
+    );
+    background-size: 4px 4px;
   }
-
-
-  @keyframes screenStatic2{
-    0%{
-      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a2a2ff 4px ), repeating-linear-gradient( #444cf755, #444cf7 );
-    }
-  
-    100%{
-      background-color: #a2a2ff;
-      opacity: 0.8;
-      background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #444cf7, #444cf7 50%, #a2a2ff 50%);
-      background-size: 4px 4px;
-    }
-  }
-
+}
