@@ -1,6 +1,6 @@
 .mainContainer {
   height: 100vh;
-  background-image: url("../../../public/photos/techStack.png");
+  background-image: url("../../photos/techStack.png");
   opacity: 0.9;
   background-repeat: no-repeat;
   margin: auto;
@@ -47,6 +47,10 @@ navContainer {
   flex-direction: column;
 }
 
+.coloredText{
+    color: #e2745e
+}
+
 .me {
   border: dotted #000000;
   height: 35vh;
@@ -60,4 +64,40 @@ navContainer {
 .projects {
   border: dotted rgb(222, 250, 13);
   height: 30vh;
+}
+
+
+.profilePicture{
+    padding-left: 30.5vw;
+    padding-top: 12.2vw;
+
+}
+.profilePicture img{
+    height: 6.5vh;
+    width:5.2vw;
+    transform: skew(0deg, 15deg);
+    animation: static 2s infinite steps(3);
+}
+
+
+@keyframes static{
+
+    0%{
+        filter: none;
+    
+    }
+    78%{
+        filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+-webkit-filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+-moz-filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+    }
+
+    95%{
+        filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+-webkit-filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+-moz-filter: grayscale(73%) sepia(46%) blur(1px) brightness(120%) saturate(333%) contrast(129%) invert(75%);
+    }
+    100%{
+        filter:none;
+    }
 }
