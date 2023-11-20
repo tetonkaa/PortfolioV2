@@ -50,16 +50,29 @@
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   margin: auto;
+  transition: .3s ease-in-out;
+}
+
+.projectButtons button:hover {
+  transition: .3s ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
+  color: #e2745e;
 }
 
 .currentProject {
-  background-color: #a2a2ff3e;
+  background-color: #a2a2ff73;
   height: 60vh;
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 4vh;
+  margin-left: 13vw;
+  border-radius: 8px;
+  z-index: 1;
+  position: absolute;
 }
 
 .currentProject h1 {
@@ -67,11 +80,16 @@
   font-weight: bolder;
   color: white;
   text-align: center;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
 
 .currentProject img {
   height: 35vh;
   margin: auto;
+}
+
+.currentProject a{
+  
 }
 
 .currentProject p {

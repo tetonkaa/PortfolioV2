@@ -21,8 +21,8 @@ export default function Projects() {
       case 1:
         return (
           <div>
-            <h1>Case 1</h1>
-            <img src={d3fine} />
+            <h1>D3fine</h1>
+            <a href="google.com"><img src={d3fine} /></a>
             <p>
               D3fine is a React based app that allows users to create customized
               personality assessments that can be shared to other users. Full
@@ -33,36 +33,30 @@ export default function Projects() {
       case 2:
         return (
           <div>
-            <h1>Case 1</h1>
-            <img src={StopJockin} />
+            <h1>Stop Jockin</h1>
+            <a href="google.com"><img src={StopJockin} /></a>
             <p>
-              D3fine is a React based app that allows users to create customized
-              personality assessments that can be shared to other users. Full
-              CRUD technology with Firebase authentication embedded.
+              Stop Jockin is a platform for New Orleans local business owner , 'Joc' , used to display many of his business ventures! This app utilizes a React front-end framework, connected to a backend API that allows admin users to manage rendered data.
             </p>
           </div>
         );
       case 3:
         return (
           <div>
-            <h1>Case 1</h1>
-            <img src={SVGeezy} />
+            <h1>SVGeezy</h1>
+            <a href="google.com"><img src={SVGeezy} /></a>
             <p>
-              D3fine is a React based app that allows users to create customized
-              personality assessments that can be shared to other users. Full
-              CRUD technology with Firebase authentication embedded.
+              Svgeezy is a Scalable Vector Graphic (SVG) gallery created through an Angular Framework. The goal for this app is to amass a collection of SVG images with direct svg pathing for devs to use for their projects. .
             </p>
           </div>
         );
       case 4:
         return (
           <div>
-            <h1>Case 1</h1>
-            <img src={ship} />
+            <h1>Ship Game</h1>
+            <a href="google.com"><img src={ship} /></a>
             <p>
-              D3fine is a React based app that allows users to create customized
-              personality assessments that can be shared to other users. Full
-              CRUD technology with Firebase authentication embedded.
+              Topdown player vs player space shooter made with GML. Controls: Player1- WSAD for movement, R for primary fire and space for secondary. Player2- Directional Keys for movement, primary fire with M.
             </p>
           </div>
         );
@@ -76,10 +70,10 @@ export default function Projects() {
           <div className="currentProject">{renderCurrentProject()}</div>
           <div className="projectButtons">
             {currentProject < 4 && (
-              <button onClick={handleNextClick}>Next</button>
+              <button onClick={handleNextClick}>[Next]</button>
             )}
             {currentProject > 1 && (
-              <button onClick={handleBackClick}>BACK</button>
+              <button onClick={handleBackClick}>[BACK]</button>
             )}
           </div>
         </div>
