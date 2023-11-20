@@ -61,8 +61,8 @@ navContainer {
   height: 20vh;
 }
 
+
 .projects {
-  border: dotted rgb(222, 250, 13);
   height: 30vh;
 }
 
@@ -77,25 +77,16 @@ navContainer {
   animation: static 2s infinite steps(3);
 }
 
-@keyframes textGlitch {
-  0% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 16px 4px 0px rgba(0, 0, 0, 0.6);
-  }
-}
 
 .projectsLink {
-  padding-top: 3.5vh;
-  padding-left: 14vw;
-  transform: skew(-2deg, -11deg);
-  font-size: 30px;
-  color: rgb(65, 65, 65);
-  animation: static 2s infinite steps(1);
-  transition: 0.3s ease-in-out;
+    padding-top: 3.5vh;
+    padding-left: 14vw;
+    transform: skew(-2deg, -11deg);
+    font-size: 30px;
+    color: rgb(65, 65, 65);
+    animation: static 2s infinite steps(1);
+    transition: 0.3s ease-in-out;
 }
-
 .projectsLink:hover {
   padding-top: 3.5vh;
   padding-left: 14vw;
@@ -107,6 +98,34 @@ navContainer {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+.contact{
+    height:10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contact a{
+    padding-left: 57.5%;
+    padding-top: 1.8vh;
+}
+.contact h1{
+
+    font-size: 38px;
+  color: rgba(65, 65, 65, 0.749);
+  animation: textGlitch 2s infinite steps(3);
+  transition: 0.3s ease-in-out;
+}
+
+.contact h1:hover{
+
+    font-size: 38px;
+  color: #e2745e;
+  font-weight: bold;
+  animation: none;
+  transition: 0.3s ease-in-out;
+}
+
 
 @keyframes static {
   0% {
@@ -133,3 +152,17 @@ navContainer {
     filter: none;
   }
 }
+
+@keyframes textGlitch {
+    0% {
+        text-shadow: none;
+    }
+  
+    95% {
+        text-shadow: 8px 4px 0px rgba(188, 188, 188, 0.6);
+    }
+    100% {
+        filter:blur(.7px);
+        text-shadow: none;
+    }
+  }
