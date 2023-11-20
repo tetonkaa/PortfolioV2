@@ -1,0 +1,44 @@
+[
+  {
+    "name": "d3fine",
+    "live": "https://www.d3fine.me/",
+    "git": "https://github.com/tetonkaa/d3fine",
+    "image": "../public/photos/d3fine.png",
+    "description": "D3fine is a React based app that allows users to create customized personality assessments that can be shared to other users. Full CRUD technology with Firebase authentication embedded."
+  },
+  {
+    "name": "Stop Jockin",
+    "live": "https://stopjockin.herokuapp.com/",
+    "git": "https://github.com/tetonkaa/StopJockinFrontend",
+    "image": "https://cdn.discordapp.com/attachments/707641558526197790/1070109091214667836/image.png",
+    "description": "Stop Jockin is a platform for New Orleans local business owner , 'Joc' , used to display many of his business ventures! This app utilizes a React front-end framework, connected to a backend API that allows admin users to manage rendered data."
+  },
+  {
+    "name": "SVGeezy",
+    "live": "https://svgeezy-production.up.railway.app/dashboard",
+    "git": "https://github.com/tetonkaa/svgeezy",
+    "image": "https://i.imgur.com/G57EdlV.png",
+    "description": "Svgeezy is a Scalable Vector Graphic (SVG) gallery created through an Angular Framework. The goal for this app is to amass a collection of SVG images with direct svg pathing for devs to use for their projects. "
+  },
+  {
+    "name": "ShipvsShip",
+    "live": "https://tetonkaa.github.io/ShipVsShip/",
+    "git": "https://github.com/tetonkaa/ShipVsShip",
+    "image": "https://cdn.discordapp.com/attachments/707641558526197790/1103368735739363379/image.png",
+    "description": "Topdown player vs player space shooter made with GML. Controls: Player1- WSAD for movement, R for primary fire and space for secondary. Player2- Directional Keys for movement, primary fire with M."
+  },
+  {
+    "name": "Lightlite",
+    "git": "https://bridgerco.net/",
+    "live": "https://bridgerco.net/",
+    "image": "https://cdn.discordapp.com/attachments/982855119056044042/1111693920397697094/image.png",
+    "description": "Mock (but currently live and functional) retail store showcasing products. Includes chat support functionality, payment processing, and email subscription options."
+  },
+  {
+    "name": "gameQ",
+    "live": "https://gameq.herokuapp.com/",
+    "git": "https://github.com/tetonkaa/gameq",
+    "image": "https://cdn.discordapp.com/attachments/707641558526197790/1070109242381582386/image.png",
+    "description": "gameQ is an app designed for twitch streamers to be able to choose games from a large third party api, and be able to present their favorites to their followers!."
+  }
+]
