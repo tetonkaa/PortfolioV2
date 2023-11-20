@@ -1,0 +1,68 @@
+.about {
+  background-color: aqua;
+  height: 100vh;
+  position: relative;
+  padding-top: 12vh;
+}
+
+.aboutContainer {
+  border: 20px dashed #00000094;
+  height: 80vh;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 17vw;
+  transition: 0.5s ease-in-out;
+  animation: dottedEntry 1s ease-in;
+}
+
+.aboutContainer .content1 p {
+  text-align: center;
+  padding: 5vw;
+  font-size: 1.2em;
+}
+
+.aboutContainer .content2 {
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.aboutContainer::before .content2 button {
+  font-size: 2em;
+  transition: 0.3s ease-in;
+  border: dotted red;
+}
+
+.aboutContainer::before .content2 button:hover {
+  font-size: 3em;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.aboutContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Set a z-index to place it on top of the content */
+  background-image: url(../../images/bgBorder.png);
+  height: 100vh;
+  background-position: 20% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@keyframes dottedEntry {
+  0% {
+    border: 1px dashed #00000094;
+  }
+  100% {
+    border: 16px dashed #00000094;
+  }
+}

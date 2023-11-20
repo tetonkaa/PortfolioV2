@@ -11,6 +11,7 @@ svg{
 }
 
 
+
 svg.ionicon:hover path {
     fill: #e2745e;
     transition: .2s ease-in-out

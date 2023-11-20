@@ -52,17 +52,13 @@ navContainer {
 }
 
 .me {
-  border: dotted #000000;
   height: 35vh;
 }
 
-.about {
-  border: solid rgb(58, 8, 224);
-  height: 20vh;
-}
 
 
-.projects {
+
+.bottomScreens {
   height: 30vh;
 }
 
