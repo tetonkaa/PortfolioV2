@@ -1,0 +1,13 @@
+.returnButton {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  margin-top: 1vh;
+  padding-right: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.returnButton svg {
+  fill: #e2745e;
+}

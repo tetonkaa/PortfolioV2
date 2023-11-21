@@ -3,6 +3,7 @@ import d3fine from "../../images/projectPhotos/d3fine.png";
 import ship from "../../images/projectPhotos/ShipVShip.png";
 import StopJockin from "../../images/projectPhotos/StopJockin.png";
 import SVGeezy from "../../images/projectPhotos/SVGeezy.png";
+import ReturnButton from "../../components/returnButton/return";
 import { useState, useEffect } from "react";
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(1);
@@ -69,15 +70,16 @@ export default function Projects() {
         <div className="projectsContainer">
           <div className="currentProject">{renderCurrentProject()}</div>
           <div className="projectButtons">
-            {currentProject < 4 && (
-              <button onClick={handleNextClick}>[Next]</button>
-            )}
             {currentProject > 1 && (
               <button onClick={handleBackClick}>[BACK]</button>
+            )}
+            {currentProject < 4 && (
+              <button onClick={handleNextClick}>[Next]</button>
             )}
           </div>
         </div>
       </div>
+      <ReturnButton/>
     </div>
   );
 }
