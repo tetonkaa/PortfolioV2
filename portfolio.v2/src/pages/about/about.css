@@ -21,6 +21,7 @@
   margin-left: 17vw;
   transition: 0.5s ease-in-out;
   animation: dottedEntry 1s ease-in;
+  background-color: #efebde;
   
 }
 

@@ -94,18 +94,18 @@ navContainer {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.contact{
+.contactMain{
     height:10vh;
     display: flex;
     flex-direction: row;
 }
 
 
-.contact a{
+.contactMain a{
     padding-left: 57.5%;
     padding-top: 1.8vh;
 }
-.contact h1{
+.contactMain h1{
 
     font-size: 38px;
   color: rgba(65, 65, 65, 0.749);
@@ -113,7 +113,7 @@ navContainer {
   transition: 0.3s ease-in-out;
 }
 
-.contact h1:hover{
+.contactMain h1:hover{
 
     font-size: 38px;
   color: #e2745e;

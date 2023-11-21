@@ -48,7 +48,7 @@ export default function Main() {
                 <h1 className="projectsLink">Projects</h1>
               </a>
             </div>
-            <div className="contact">
+            <div className="contactMain">
               <a href="/Contact">
                 <h1>Contact</h1>
               </a>
