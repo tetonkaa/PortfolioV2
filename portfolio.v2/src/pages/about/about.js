@@ -6,6 +6,7 @@ export default function About() {
       <div className="aboutBorder">
         <div className="aboutContainer">
           <div className="content1">
+            <h1>About</h1>
             <p>
               I'm a Software Engineer with a knack for making code do cool
               things. I've danced my way through the ins and outs of React,

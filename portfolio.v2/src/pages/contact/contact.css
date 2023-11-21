@@ -18,7 +18,7 @@
   width: 60vw;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 17vw;
   transition: 0.5s ease-in-out;
   animation: dottedEntry 1s ease-in;
@@ -50,18 +50,30 @@
 .contactFormContainer form {
   background-color: #efebde;
   margin: auto;
-  height: 40vh;
+  height: 60vh;
   width: 30vw;
   border-radius: 20px;
+  box-shadow: 10px 10px 164px -28px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 10px 10px 164px -28px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 10px 10px 164px -28px rgba(0, 0, 0, 0.75) inset;
 }
 
 .contactFormContainer form h1 {
   color: white;
   border-radius: 8px 8px 0px 0px;
-  background-color: #050953;
+  background-color: #010ab0;
   width: 100%;
   padding: 10px;
 }
+
+.contactFormContainer textarea {
+  color: rgb(0, 0, 0);
+  background-color: #e7e5da;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+}
+
 
 .sendButton {
   background: #b9b8b6;
@@ -69,6 +81,8 @@
   text-align: center;
   box-shadow: inset 0.07em 0.09em #f2eee4;
   padding: 10px;
+  margin-left: 45%;
+  margin-top: 4vh;
 }
 
 .sendButton:hover {

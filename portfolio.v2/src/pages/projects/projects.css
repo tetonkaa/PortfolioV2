@@ -10,7 +10,7 @@
 }
 
 .projectsContainer {
-  border: 16px dashed #00000094;
+
   height: 80vh;
   width: 60vw;
   margin: auto;
@@ -18,7 +18,7 @@
   flex-direction: column;
   margin-left: 17vw;
   transition: 0.5s ease-in-out;
-  animation: dottedEntry 1s ease-in;
+
 }
 
 .projectsContainer::before {
