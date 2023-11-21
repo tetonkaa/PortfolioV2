@@ -3,7 +3,7 @@ import "./return.css";
 export default function ReturnButton() {
   return (
     <div className="returnButton">
-      <a href="google.com">
+      <a href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="ionicon"
