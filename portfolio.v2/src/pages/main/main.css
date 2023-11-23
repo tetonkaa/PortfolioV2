@@ -63,7 +63,7 @@ navContainer {
 }
 
 
-.bottomScreens {
+.projectScreen {
   height: 30vh;
 }
 
@@ -99,18 +99,18 @@ navContainer {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.contactMain{
+.bottomScreens{
     height:10vh;
     display: flex;
     flex-direction: row;
 }
 
 
-.contactMain a{
+.bottomScreens a{
     padding-left: 57.5%;
     padding-top: 1.8vh;
 }
-.contactMain h1{
+.bottomScreens h1{
 
     font-size: 38px;
   color: rgba(65, 65, 65, 0.749);
@@ -118,13 +118,28 @@ navContainer {
   transition: 0.3s ease-in-out;
 }
 
-.contactMain h1:hover{
+.bottomScreens h1:hover{
 
     font-size: 38px;
   color: #e2745e;
   font-weight: bold;
   animation: none;
   transition: 0.3s ease-in-out;
+}
+
+.bottomScreens img{
+  height: 7vh;
+  transform: skew(0deg, -10deg);
+  padding-left: 5vw;
+  padding-top: 2vh;
+  animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn{
+  0%{opacity: .1
+  }
+  100%{opacity: 1}
 }
 
 

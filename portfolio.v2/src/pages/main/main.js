@@ -1,11 +1,11 @@
 import "./main.css";
 import Nav from "../../components/nav/nav";
 import face from "../../images/meHead.png";
+import React, { useState, useEffect } from "react";
 
 const svgArray = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -18,6 +18,19 @@ const svgArray = [
 ];
 
 export default function Main() {
+  const [currentSvgIndex, setCurrentSvgIndex] = useState(0);
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSvgIndex((prevIndex) => (prevIndex + 1) % svgArray.length);
+    }, 3000);
+
+    setKey((prevKey) => prevKey + 1);
+
+    return () => clearInterval(intervalId);
+  }, [svgArray.length]);
+
   return (
     <>
       <div className="main">
@@ -63,15 +76,16 @@ export default function Main() {
                 </a>
               </div>
             </div>
-            <div className="bottomScreens">
+            <div className="projectScreen">
               <a href="/Projects">
                 <h1 className="projectsLink">Projects</h1>
               </a>
             </div>
-            <div className="contactMain">
+            <div className="bottomScreens">
               <a href="/Contact">
                 <h1>Contact</h1>
               </a>
+              <img key={currentSvgIndex} src={svgArray[currentSvgIndex]} />
             </div>
           </div>
         </div>
