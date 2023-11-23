@@ -6,9 +6,11 @@ import Main from './pages/main/main';
 import Projects from './pages/projects/projects';
 import Contact from './pages/contact/contact';
 import About from './pages/about/about';
+import Cursor from './components/cursor/cursor';
 function App() {
   return (
     <>
+    <Cursor />
     <Router>
     <Routes>
       <Route path="/" element={<Main/>}/>

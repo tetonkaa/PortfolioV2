@@ -1,0 +1,16 @@
+body {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 20px; /* Set the width of the cursor */
+    height: 20px; /* Set the height of the cursor */
+    background-color: red; /* Set the background color of the cursor */
+    border-radius: 50%; /* Make the cursor circular */
+    mix-blend-mode: difference; /* Optional: Blend mode for a different visual effect */
+    pointer-events: none; /* Allow interactions with elements beneath the cursor */
+    z-index: 999; /* Ensure the cursor is on top of other elements */
+  }
+
+

@@ -97,7 +97,6 @@ navContainer {
   animation: none;
   font-weight: bold;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
 }
 .bottomScreens{
     height:10vh;
@@ -107,7 +106,7 @@ navContainer {
 
 
 .bottomScreens a{
-    padding-left: 57.5%;
+    padding-left: 57%;
     padding-top: 1.8vh;
 }
 .bottomScreens h1{
@@ -116,6 +115,7 @@ navContainer {
   color: rgba(65, 65, 65, 0.749);
   animation: textGlitch 2s infinite steps(3);
   transition: 0.3s ease-in-out;
+  width: 7.5vw;
 }
 
 .bottomScreens h1:hover{
@@ -130,7 +130,7 @@ navContainer {
 .bottomScreens img{
   height: 7vh;
   transform: skew(0deg, -10deg);
-  padding-left: 5vw;
+  margin-left: 5vw;
   padding-top: 2vh;
   animation: fadeIn 1s;
 }
