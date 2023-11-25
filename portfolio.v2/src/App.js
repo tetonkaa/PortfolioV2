@@ -9,7 +9,7 @@ import About from './pages/about/about';
 import Cursor from './components/cursor/cursor';
 function App() {
   return (
-    <>
+    <div className="App">
     <Cursor />
     <Router>
     <Routes>
@@ -19,7 +19,7 @@ function App() {
       <Route path="/About" element={<About/>}/>
     </Routes>
     </Router>
-    </>
+    </div>
   );
 }
 

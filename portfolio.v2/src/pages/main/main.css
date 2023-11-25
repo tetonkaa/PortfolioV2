@@ -1,16 +1,19 @@
 .mainContainer {
-  height: 100vh;
+  height: 100%;
   background-image: url("../../images/techStack.png");
   opacity: 0.9;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin: auto;
   width: 53%;
+  border: dotted red;
 }
 
 .main {
   background-color: #f3e7d4;
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .introText {
@@ -46,6 +49,9 @@
 navContainer {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  border: dotted rgb(17, 254, 41);
 }
 
 .coloredText {
@@ -54,43 +60,49 @@ navContainer {
 
 .me {
   height: 35vh;
+  border: dotted rgb(255, 0, 234);
+  
 }
 
-.homeSvgs{
+.homeSvgs {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
 }
 
-
 .projectScreen {
-  height: 30vh;
+  height: 23vh;
+  max-width: 100vw;
+  border: dotted orange;
+  padding-top: 2%;
+  padding-left: 26.5%;
 }
 
 .profilePicture {
-  padding-left: 30.5vw;
-  padding-top: 12.2vw;
+  margin-left: 58.5%;
+  margin-top: 21%;
 }
 .profilePicture img {
-  height: 6.5vh;
-  width: 5.2vw;
+  height: 3.5em;
+  width: 5em;
   transform: skew(0deg, 15deg);
   animation: static 2s infinite steps(3);
 }
 
+.projectScreen a {
+}
 
 .projectsLink {
-    padding-top: 3.5vh;
-    padding-left: 14vw;
-    transform: skew(-2deg, -11deg);
-    font-size: 30px;
-    color: rgb(65, 65, 65);
-    animation: static 2s infinite steps(1);
-    transition: 0.3s ease-in-out;
+  height: 3em;
+  width: 4em;
+
+  transform: skew(-2deg, -11deg);
+  font-size: 1.7rem;
+  color: rgb(65, 65, 65);
+  animation: static 2s infinite steps(1);
+  transition: 0.3s ease-in-out;
 }
 .projectsLink:hover {
-  padding-top: 3.5vh;
-  padding-left: 14vw;
   transform: skew(-2deg, -11deg);
   font-size: 30px;
   color: #e2745e;
@@ -98,50 +110,51 @@ navContainer {
   font-weight: bold;
   transition: 0.3s ease-in-out;
 }
-.bottomScreens{
-    height:10vh;
-    display: flex;
-    flex-direction: row;
+
+.bottomScreens {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  border: dotted rgb(85, 27, 37);
 }
 
-
-.bottomScreens a{
-    padding-left: 57%;
-    padding-top: 1.8vh;
+.bottomScreens a {
+  padding-left: 57%;
+  border: dotted pink;
 }
-.bottomScreens h1{
-
-    font-size: 38px;
+.bottomScreens h1 {
+  padding-top: 2%;
+  font-size: 38px;
   color: rgba(65, 65, 65, 0.749);
   animation: textGlitch 2s infinite steps(3);
   transition: 0.3s ease-in-out;
   width: 7.5vw;
 }
 
-.bottomScreens h1:hover{
-
-    font-size: 38px;
+.bottomScreens h1:hover {
+  font-size: 38px;
   color: #e2745e;
   font-weight: bold;
   animation: none;
   transition: 0.3s ease-in-out;
 }
 
-.bottomScreens img{
-  height: 7vh;
+.bottomScreens img {
+  height: 6vh;
   transform: skew(0deg, -10deg);
-  margin-left: 5vw;
-  padding-top: 2vh;
+  margin-left: 8%;
+  padding-top: 1%;
   animation: fadeIn 1s;
 }
 
-
-@keyframes fadeIn{
-  0%{opacity: .1
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
   }
-  100%{opacity: 1}
+  100% {
+    opacity: 1;
+  }
 }
-
 
 @keyframes static {
   0% {
@@ -170,15 +183,15 @@ navContainer {
 }
 
 @keyframes textGlitch {
-    0% {
-        text-shadow: none;
-    }
-  
-    95% {
-        text-shadow: 8px 4px 0px rgba(188, 188, 188, 0.6);
-    }
-    100% {
-        filter:blur(.7px);
-        text-shadow: none;
-    }
+  0% {
+    text-shadow: none;
   }
+
+  95% {
+    text-shadow: 8px 4px 0px rgba(188, 188, 188, 0.6);
+  }
+  100% {
+    filter: blur(0.7px);
+    text-shadow: none;
+  }
+}

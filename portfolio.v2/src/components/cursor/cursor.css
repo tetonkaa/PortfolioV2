@@ -1,16 +1,42 @@
 body {
     cursor: none; /* Hide the default cursor */
   }
-  
   .custom-cursor {
     position: fixed;
     width: 20px; /* Set the width of the cursor */
     height: 20px; /* Set the height of the cursor */
-    background-color: red; /* Set the background color of the cursor */
-    border-radius: 50%; /* Make the cursor circular */
-    mix-blend-mode: difference; /* Optional: Blend mode for a different visual effect */
+    background-color: rgba(255, 0, 0, 0.378); /* Set the background color of the cursor */
+    border-radius: 99%; /* Make the cursor circular */
+    /* Optional: Blend mode for a different visual effect */
     pointer-events: none; /* Allow interactions with elements beneath the cursor */
     z-index: 999; /* Ensure the cursor is on top of other elements */
+    box-shadow:rgb(0, 0, 0) 0px 0px 10px 2px;
+    border: ridged 3mm rgb(255, 0, 0);
+    animation: cursorAnimaton 1s ease-in-out infinite;
+  }
+  
+  
+  
+  .projectsLink:hover + .custom-cursor{
+    background-color: rgb(34, 0, 128);
   }
 
+  @keyframes cursorAnimaton{
 
+
+    0%{
+      box-shadow:rgba(255, 0, 0, 0.166) 0px 0px 2px 1px;
+      border-radius: 99%;
+    }
+
+    50%{
+      box-shadow:rgba(255, 0, 0, 0.166) 0px 0px 15px 2px;
+      border-radius: 61%;
+    }
+
+    100%{
+      box-shadow:rgba(255, 0, 0, 0.166) 0px 0px 2px 1px;
+      border-radius: 99%;
+    }
+  }
+  
